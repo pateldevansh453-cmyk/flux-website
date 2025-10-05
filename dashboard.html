@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flux Club - Dashboard</title>
+<link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+<nav class="navbar">
+  <div class="logo">
+    <img src="images/flux-logo.png" alt="Flux Logo">
+    <span>Flux Club</span>
+  </div>
+  <div class="nav-links">
+    <a href="dashboard.html" class="active">Home</a>
+    <a href="what-is-flux.html">What is Flux</a>
+    <a href="why-join.html">Why Join</a>
+    <a href="workshops.html">Workshops</a>
+    <a href="team.html">Team</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</nav>
+
+<main class="dashboard-container">
+  <section class="welcome-banner section">
+    <h1>Welcome, <span id="usernameDisplay">Member</span> 👋</h1>
+    <p>Explore Flux Club and connect with like-minded individuals!</p>
+  </section>
+</main>
+
+<footer class="footer">
+  &copy; 2025 Flux Club. All rights reserved.
+</footer>
+
+<script src="dashboard.js"></script>
+</body>
+</html>

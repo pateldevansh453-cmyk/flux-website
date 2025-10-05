@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flux Club - Login</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-animation">
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+  <div class="particle"></div>
+</div>
+
+<div class="login-container">
+  <div class="brand-panel">
+    <img src="images/flux-logo.png" alt="Flux Logo" class="flux-logo">
+    <h1 class="brand-title">FLUX CLUB</h1>
+    <p class="brand-subtitle">Where Members Connect & Thrive</p>
+  </div>
+
+  <div class="form-panel">
+    <form id="loginForm">
+      <div class="input-group">
+        <input type="text" id="username" placeholder="Username" required>
+      </div>
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Password" required>
+      </div>
+      <div class="error-alert" id="errorMessage"></div>
+      <button type="submit" class="login-button">Sign In</button>
+    </form>
+    <div class="demo-credentials">
+      Demo: admin / flux2024 | user / user123
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

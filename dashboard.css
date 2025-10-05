@@ -1,0 +1,126 @@
+/* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0a0e27, #1a1332, #2d1b3d);
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #00f5ff;
+}
+.logo img { width: 40px; border-radius: 50%; }
+.nav-links {
+  display: flex;
+  gap: 25px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.nav-links a:hover, .nav-links a.active {
+  color: #00f5ff;
+  border-bottom: 2px solid #00f5ff;
+  padding-bottom: 3px;
+}
+.logout-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(135deg,#8b5cf6,#00f5ff);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+.logout-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,245,255,0.4);
+}
+
+/* Main Container */
+.dashboard-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Section Styling */
+.section {
+  background: rgba(255,255,255,0.05);
+  padding: 40px 30px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.section h1, .section h2 {
+  color: #00f5ff;
+  margin-bottom: 15px;
+}
+.section p {
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+.item-list {
+  list-style: none;
+  padding-left: 0;
+}
+.item-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.item-list li:last-child {
+  border-bottom: none;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255,255,255,0.1);
+  margin-top: 50px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
